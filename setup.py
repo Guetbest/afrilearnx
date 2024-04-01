@@ -29,7 +29,7 @@ setup(
     version=ABOUT["__version__"],
     url="https://github.com/overhangio/tutor-indigo",
     project_urls={
-        "Documentation": "https://docs.tutor.edly.io/",
+        "Documentation": "https://www.growlearnconnect.org/user/1135",
         "Code": "https://github.com/overhangio/tutor-indigo",
         "Issue tracker": "https://github.com/overhangio/tutor-indigo/issues",
         "Community": "https://discuss.openedx.org",

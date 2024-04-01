@@ -1,0 +1,43 @@
+<%page expression_filter="h" />
+<%!
+from django.conf import settings
+from django.utils.translation import gettext as _
+%>
+<%namespace file="sock_links_extra.html" import="get_sock_links_extra" />
+
+<%def name="get_sock_links()">
+    <%
+        partner_email = settings.PARTNER_SUPPORT_EMAIL
+        links = [
+            {
+                'href': 'https://fr.wikipedia.org/',
+                'sr_mouseover_text': _('Access documentation'),
+                'text': _('Documentation'),
+                'condition': True
+            }, {
+                'href': 'https://fr.wikipedia.org/',
+                'sr_mouseover_text': _('Access the Portal'),
+                'text': _('AfrilearnX Portal'),
+                'condition': True
+            }, {
+                'href': 'https://fr.wikipedia.org/',
+                'sr_mouseover_text': _('Creating an afrilearnX Course'),
+                'text': _('Enroll'),
+                'condition': True
+            }, {
+                'href': 'https://fr.wikipedia.org/',
+                'sr_mouseover_text': _('Enroll in StudioX: Creating a Course with AfrilearnX Studio'),
+                'text': _('Enroll in StudioX'),
+                'condition': True
+            }, {
+                'href': 'mailto:{email}'.format(email=partner_email),
+                'sr_mouseover_text': _('Send an email to {email}').format(email=partner_email),
+                'text': _('Contact Us'),
+                'condition': bool(partner_email)
+            }
+        ]
+        links_extra = get_sock_links_extra()
+        links += links_extra
+        return links
+    %>
+</%def>

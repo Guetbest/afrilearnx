@@ -32,7 +32,7 @@
         <li>Powered by:</li>
         <li>
           <a href="https://www.growlearnconnect.org/user/1135" rel="noopener" target="_blank">
-            <img src="${static.url('images/tutor-logo.png')}" alt="Guetbest in da place" width="57" />
+            <img src="${static.url('images/tutor-logo.png')}" alt="Guetbest" width="57" />
           </a>
         </li>
         <li>
@@ -46,7 +46,7 @@
     <nav class="nav-colophon" aria-label="${_('About')}">
       <ol>
           {% for link in INDIGO_FOOTER_NAV_LINKS %}
-         <li>
+          <li>
             <a href="{{ link['url'] }}">{{ link['title'] }}</a>
           </li>
           {% endfor %}
@@ -96,7 +96,7 @@
           <li>Powered by:</li>
           <li>
             <a href="https://www.growlearnconnect.org/user/1135" rel="noopener" target="_blank">
-              <img src="${static.url('images/tutor-logo.png')}" alt="Guetbest in da place" width="57" />
+              <img src="${static.url('images/tutor-logo.png')}" alt="Guetbest" width="57" />
             </a>
           </li>
           <li>
